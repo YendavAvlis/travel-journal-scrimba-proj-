@@ -1,7 +1,7 @@
 export default function Journal() {
-    return(
-        <>
+    return (
+        <main>
             Journal
-        </>
+        </main>
     )
 }
