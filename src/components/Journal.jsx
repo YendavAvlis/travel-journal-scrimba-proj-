@@ -3,16 +3,16 @@ import Marker from "../assets/marker.png"
 
 export default function Journal() {
     return (
-        <main>
+        <main className="">
 
                 {
                     data.map((entry) => (
-                        <div key={entry.id} className="py-4 md:flex items-center justify-center bg-amber-50">
-                            <div className="overflow-hidden max-w-[400px] max-h-[300px] rounded-2xl m-8">
+                        <div key={entry.id} className="py-4 md:flex md:items-center md:justify-center bg-amber-50 shadow-2xl">
+                            <div className="overflow-hidden max-w-[400px] max-h-[350px] rounded-2xl m-8 shadow-lg">
                                 <img
                                     src={entry.img.src}
                                     alt={entry.img.alt}
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                                 />
                             </div>
                             <div className="px-8">
@@ -26,7 +26,7 @@ export default function Journal() {
                                     <span className="font-bold block mb-4">{entry.dates}</span>
                                     <p className="">{entry.text}</p>
                                 </div>
-                                <hr className="mt-8 text-3xl"/>
+                                <hr className="my-8 "/>
                             </div>
 
 
