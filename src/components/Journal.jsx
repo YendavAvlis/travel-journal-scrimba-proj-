@@ -8,7 +8,7 @@ export default function Journal() {
                 {
                     data.map((entry) => (
                         <div key={entry.id} className="py-4 md:flex items-center justify-center bg-amber-50">
-                            <div className="overflow-hidden max-w-[400px] max-h-[200px] rounded-2xl m-8">
+                            <div className="overflow-hidden max-w-[400px] max-h-[300px] rounded-2xl m-8">
                                 <img
                                     src={entry.img.src}
                                     alt={entry.img.alt}
@@ -26,7 +26,9 @@ export default function Journal() {
                                     <span className="font-bold block mb-4">{entry.dates}</span>
                                     <p className="">{entry.text}</p>
                                 </div>
+                                <hr className="mt-8 text-3xl"/>
                             </div>
+
 
                         </div>
                     ))
